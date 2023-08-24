@@ -8,7 +8,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 
-public class Word_counter extends JFrame implements ActionListener {
+public class WordCounter extends JFrame implements ActionListener {
 
     JFrame frame;
     JTextArea textArea;
@@ -18,7 +18,7 @@ public class Word_counter extends JFrame implements ActionListener {
     JButton exitButton;
     JTextField textField;
 
-    Word_counter(){
+    WordCounter(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame=new JFrame("Word Counter");
         frame.setSize(600,400);
@@ -79,6 +79,10 @@ public class Word_counter extends JFrame implements ActionListener {
         int l=arr.length;
         textField.setText(l+"");
     }
+    public static void main(String[] args){
+        WordCounter wordcounter=new WordCounter();
+    }
+}
     public static void main(String[] args){
         Word_counter wordcounter=new Word_counter();
     }
